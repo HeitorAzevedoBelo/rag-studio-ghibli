@@ -24,7 +24,6 @@ Thumbs.db
 *.pickle
 chat.json
 chat_history.json
-static/assets/*
 !static/assets/background.png
 midia/
 __output__/

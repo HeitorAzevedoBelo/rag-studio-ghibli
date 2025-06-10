@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chat Ghibli</title>
+  <title>Chat - Studio Ghibli</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/favicon.png') }}" type="image/x-icon">
 </head>
 <body>
 
-  <header>Chat Studio Ghibli</header>
+  <header>Chat do Studio Ghibli - Atividade RAG</header>
 
   <main id="chat-container"></main>
 
@@ -16,7 +17,7 @@
     <input
       type="text"
       id="pergunta"
-      placeholder="Pergunta ao Sábio de Howl..."
+      placeholder="Pergunta ao Howl..."
       autocomplete="off"
     />
     <button id="enviar">Perguntar</button>
