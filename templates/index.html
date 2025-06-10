@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Ghibli</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <header>Chat Studio Ghibli</header>
+
+  <main id="chat-container"></main>
+
+  <section id="input-area">
+    <input
+      type="text"
+      id="pergunta"
+      placeholder="Pergunta ao Sábio de Howl..."
+      autocomplete="off"
+    />
+    <button id="enviar">Perguntar</button>
+  </section>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

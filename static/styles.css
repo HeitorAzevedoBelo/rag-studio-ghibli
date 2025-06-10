@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --bg-main: #1B1F23;
+  --bg-header: #2F3E46;
+  --text-header: #F1F1F1;
+  --bg-chat: #1C252B;
+  --bg-user: #4E6150;
+  --bg-bot: #3C3A3A;
+  --text-bot: #EADBC8;
+  --bg-input: #2A2E32;
+  --accent: #A67C52;
+  --accent-dark: #8B623F;
+  --chat-bg: url("./assets/background.png");
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: var(--bg-main);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #F1F1F1;
+}
+
+header {
+  background: var(--bg-header);
+  color: var(--text-header);
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px RGBA(0,0,0,0.4);
+}
+
+#chat-container {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-image: var(--chat-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #3B3B3B;
+  border-bottom: 1px solid #3B3B3B;
+  backdrop-filter: blur(2px);
+}
+
+.message {
+  margin: 0.5rem 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+}
+
+.user {
+  text-align: right;
+}
+
+.user .message {
+  background: var(--bg-user);
+  border-radius: 1rem 1rem 0.5rem 1rem;
+  display: inline-block;
+}
+
+.bot .message {
+  background: var(--bg-bot);
+  color: var(--text-bot);
+  border-radius: 1rem 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+#input-area {
+  display: flex;
+  padding: 1rem;
+  background: var(--bg-input);
+  border-top: 2px solid #444444;
+}
+
+#input-area input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #555555;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #1E1E1E;
+  color: #FFFFFF;
+}
+
+#input-area button {
+  margin-left: 0.5rem;
+  padding: 0.75rem 1.2rem;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+#input-area button:hover {
+  background: var(--accent-dark);
+}
