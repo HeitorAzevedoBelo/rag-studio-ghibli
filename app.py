@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from modelo import responder
+from model import responder
 
 app = Flask(__name__)
 
